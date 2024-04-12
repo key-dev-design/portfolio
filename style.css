@@ -1,0 +1,98 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@keyframes textLoop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+body,
+p,
+summary {
+    font-family: "Pretendard", sans-serif;
+    margin: 0;
+}
+
+.flowWrap {
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #000;
+    transition: 0.3s;
+}
+
+.flowWrap:hover {
+    color: #000;
+}
+
+.flowWrap:hover .flowTxt {
+    animation-play-state: paused;
+}
+
+.flowTxt {
+    font-size: 5vw;
+    padding: 10px 2vw;
+    animation: textLoop 10s linear infinite;
+}
+
+summary {
+    font-size: 1.5vw;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.itemWrap {
+    width: 85%;
+    margin: 50px;
+}
+
+.topWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2.2vw;
+    font-weight: 700;
+}
+
+.content {
+    font-size: 1.2vw;
+    line-height: 1.5;
+    margin-top: 100px;
+}
+
+.imgWrap {
+    display: flex;
+    gap: 50px;
+}
+
+img {
+    height: 70vh;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cherryHome {
+    height: 55vh;
+}
+
+.bottomWrap {
+    margin-top: 50px;
+}
+
+.bottomWrap .imgWrap {
+    justify-content: right;
+}
+
+.itemWrap + .itemWrap {
+    border-top: 1px solid #000;
+    padding-top: 50px;
+}
