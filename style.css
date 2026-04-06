@@ -55,7 +55,7 @@ summary {
 .topWrap {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 80px;
 }
 
 .txtWrap {
@@ -86,7 +86,8 @@ summary {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-img {
+img,
+video {
     width: 100%;
     max-width: 365.7px;
     border-radius: 30px;
@@ -97,7 +98,7 @@ img {
     grid-template-columns: 1fr;
 }
 
-.cherryHome img {
+.cherryHome video {
     max-width: none;
 }
 
