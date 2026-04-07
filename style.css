@@ -18,27 +18,13 @@ summary {
     margin: 0;
 }
 
-.flowWrap {
-    display: flex;
-    flex: 0 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
+.titleWrap {
     border-bottom: 2px solid #000;
-    transition: 0.3s;
 }
 
-.flowWrap:hover {
-    color: #000;
-}
-
-.flowWrap:hover .flowTxt {
-    animation-play-state: paused;
-}
-
-.flowTxt {
+.titleTxt {
     font-size: 5vw;
     padding: 10px 2vw;
-    animation: textLoop 10s linear infinite;
 }
 
 summary {
@@ -71,6 +57,17 @@ summary {
     font-size: 1.2vw;
     line-height: 1.5;
     margin-top: 8vw;
+}
+
+.link {
+    display: inline-block;
+    font-size: 1.2vw;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-top: 4vw;
+    text-decoration: none;
 }
 
 .imgWrap {
@@ -116,7 +113,7 @@ video {
 }
 
 @media (max-width: 767px) {
-    .flowTxt {
+    .titleTxt {
         font-size: 10vw;
     }
 
@@ -141,6 +138,10 @@ video {
         font-size: 4vw;
         word-break: keep-all;
         margin-top: 30px;
+    }
+
+    .link {
+        font-size: 4vw;
     }
 
     br {
